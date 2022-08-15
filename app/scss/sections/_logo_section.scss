@@ -8,10 +8,12 @@
     &:after{
         position: absolute;
         content: url('../images/second_images.png');
-        transform: scale(.95);
+        transform: scale(1);
         width: 100%;
-        top: -1.68%;
-        left: 6%;
+        top: 0%;
+        bottom: 0%;
+        left: 5%;
+        right: 0%;
         z-index: -1;
         @media (max-width: 450px){
             
@@ -22,6 +24,10 @@
             left: 3%;
             transform: scale(.6);
             top: -15.3%;
+        }
+        @media (max-width: 1440px){
+            transform: scale(1);
+            left: 6.2%;
         }
       
     }

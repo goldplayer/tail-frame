@@ -5,9 +5,15 @@
     &:after{
         position: absolute;
         content: url('../images/pic3.png');
-        top: -10%;
-        right: 0%;
+        transform: scale(1);
+        top: -12%;
+        right: 20%;
+        // left:0%;
         z-index: -1;
+
+        @media (max-width: 1280px){
+            right: 10%;
+        }
     }
     .caption__block{
 
@@ -54,5 +60,12 @@
         }
     }
 
-     
+    .block_text_about {
+        display: flex;
+        align-items: center;
+
+        &_content{
+
+        }
+    }
 }
