@@ -1,0 +1,58 @@
+.about__us{
+    height: 100vh;
+    position: relative;
+
+    &:after{
+        position: absolute;
+        content: url('../images/pic3.png');
+        top: -10%;
+        right: 0%;
+        z-index: -1;
+    }
+    .caption__block{
+
+        h2{
+            font-size: 70px;
+        }
+    }
+
+
+    .status__bar{
+        display: flex;
+        margin-top: 100px;
+        &_item{
+            margin-right: 24px;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            width: 50px;
+            height: 350px;
+            border-radius: 10px;
+
+            .bar{
+                padding-left: 5px;
+                padding-right: 5px;
+                display: block;
+                width: 100%;
+                height: 50%;
+                background-color: $lightgrey;
+                color: white;
+                display: flex;
+                align-items: flex-end;
+                text-align: center;
+                justify-content: center;
+                font-size:0px;
+                border-radius: 10px;
+
+
+                &:hover{
+                    cursor: pointer;
+                    background: #5364FF;
+                    box-shadow: 0px 15px 60px rgba(83, 100, 255, 0.4);
+                }
+            }
+        }
+    }
+
+     
+}

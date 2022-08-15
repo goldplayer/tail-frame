@@ -1,0 +1,48 @@
+.logo_fullscreen{
+    background: linear-gradient(108deg, #9B3AFF 6.84%, #953AFF 66.11%, #913AFF 100.11%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        content: url('../images/second_images.png');
+        transform: scale(.95);
+        width: 100%;
+        top: -1.68%;
+        left: 6%;
+        z-index: -1;
+        @media (max-width: 450px){
+            
+                left: 100%;
+            
+        }
+        @media(max-width:770px){
+            left: 3%;
+            transform: scale(.6);
+            top: -15.3%;
+        }
+      
+    }
+   
+
+
+    .content__block{
+        margin-top: 100px;
+        h2{
+            font-size: 100px;
+            color: #fff;
+        }
+    }
+
+
+
+
+
+    @media (max-width: 450px){
+        .content__block{
+            margin-top: 0px;
+        }
+    }
+}
